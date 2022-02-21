@@ -99,8 +99,6 @@ router.get("/users/:userId/logs", (req, res) => {
         return;
       }
 
-      console.log(exercises);
-
       const formatedOutput = {
         _id: requestedId,
         username: exercises[0].username,
