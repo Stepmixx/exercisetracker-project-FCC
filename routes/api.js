@@ -111,7 +111,7 @@ router.get("/users/:userId/logs", (req, res) => {
         log: exercises.map((exercise) => ({
           description: exercise.description,
           duration: exercise.duration,
-          date: exercise.date.toDateString(),
+          date: new Date(exercise.date).toDateString(),
         })),
       };
 
